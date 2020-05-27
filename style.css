@@ -1,0 +1,156 @@
+#grad1 {
+    height: 100vh;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(238, 206, 227), rgb(241, 141, 183)); /* Standard syntax (must be last) */
+}
+
+.content {
+   background-color: rgb(247, 240, 245);
+    padding: 20px;
+    position: fixed;
+    margin: 0 25% 0% 25% ; 
+    top:10%; 
+    border: 5px solid black;
+    height: 70%; 
+    border-radius: 8px;
+    border-top: 5px black;
+    border-left: 5px black;
+    border-color: black;
+}
+main{
+    padding-left: 5%;
+}
+.img-logo{
+    float: left;  
+}
+.img-logo:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.contact{
+    float: right;
+}
+.title{
+    text-align: center; 
+    font-family: "Lobster", serif; 
+}
+.title h1 strong{
+    text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
+    color:#cc8800 ;
+    font-size: 111%;
+}
+.title h1 strong:hover{
+    text-shadow: 0 0 5px rgb(255, 0, 0), 0 0 7px #cc002c;
+    color:#cc8800 ;
+    font-size: 120%;
+}
+.main h2 strong{
+    font-size: 99%;
+}
+.main h3 strong{  
+    font-size: 89%;
+}
+ul li a{
+    color: red;
+}
+ul li a:hover{
+    color: green;
+}
+
+.contact{
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation{
+    to{
+        visibility: hidden;
+        color: red;
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .content {
+        background-color: rgb(247, 240, 245);
+         padding: 10px;
+         position: fixed;
+         margin: 0 10% 0% 10% ; 
+         top:5%; 
+         border: 5px solid black;
+         height: 100%; 
+         border-radius: 3px;
+         border-top: 3px black;
+         border-left: 3px black;
+         border-color: black;
+     }
+     main{
+         padding-left: 0%;
+     }
+     .contact{
+         float: right;
+     }
+     .title{
+         text-align: center; 
+         font-family: "Lobster", serif; 
+         padding-bottom: 31px;
+     }
+     .title h1 strong{
+         text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
+         color:#cc8800 ;
+         font-size: 150%;
+     }
+     .main h2 strong{
+         font-size: 50%;
+     }
+     .main h3 strong{  
+         font-size: 10%;
+     }
+     .header .hr hr{
+         margin-top: 100px;
+     }
+   
+}
+
+@media all and (max-width: 1024px) {
+    .content {
+         height: 80%; 
+     }
+     .title h1 strong{
+        font-size: 80%;
+    }
+}
+@media all and (max-width: 425px) {
+    .title h1 strong{
+        text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
+        color:#cc8800 ;   
+        font-size: 70%;
+
+    }
+}
+@media all and (max-width: 320px) {
+    .title h1 strong{
+        text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
+        color:#cc8800 ;
+        font-size: 12px;
+        
+    }
+    .content {
+        height: 90%; 
+    }
+    .title h1 strong{
+        font-size: 71%;
+   }
+   .main h2 strong{
+    font-size: 99%;
+}
+.img-logo{
+    float: left; 
+
+}
+.title {
+    font-size: 10px;
+    text-align: center;
+    font-family: "Lobster", serif;
+    padding-bottom: 6px;
+}
+}
