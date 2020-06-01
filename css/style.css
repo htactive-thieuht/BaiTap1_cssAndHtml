@@ -11,7 +11,7 @@
     margin: 0 25% 0% 25% ; 
     top:10%; 
     border: 5px solid black;
-    height: 70%; 
+    height: 86%; 
     border-radius: 8px;
     border-top: 5px black;
     border-left: 5px black;
@@ -56,11 +56,11 @@ ul li a{
 ul li a:hover{
     color: green;
 }
-
 .contact{
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
+
 @keyframes blink-animation{
     to{
         visibility: hidden;
@@ -68,7 +68,6 @@ ul li a:hover{
         font-size: 10px;
     }
 }
-
 @media all and (max-width: 768px) {
     .content {
         background-color: rgb(247, 240, 245);
@@ -82,40 +81,38 @@ ul li a:hover{
          border-top: 3px black;
          border-left: 3px black;
          border-color: black;
-     }
-     main{
-         padding-left: 0%;
-     }
-     .contact{
-         float: right;
-     }
-     .title{
-         text-align: center; 
-         font-family: "Lobster", serif; 
-         padding-bottom: 31px;
-     }
-     .title h1 strong{
-         text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
-         color:#cc8800 ;
-         font-size: 150%;
-     }
-     .main h2 strong{
-         font-size: 50%;
-     }
-     .main h3 strong{  
-         font-size: 10%;
-     }
-     .header .hr hr{
-         margin-top: 100px;
-     }
-   
+    }
+    main{
+        padding-left: 0%;
+    }
+    .contact{
+        float: right;
+    }
+    .title{
+        text-align: center; 
+        font-family: "Lobster", serif; 
+        padding-bottom: 31px;
+    }
+    .title h1 strong{
+        text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
+        color:#cc8800 ;
+        font-size: 150%;
+    }
+    .main h2 strong{
+        font-size: 50%;
+    }
+    .main h3 strong{  
+        font-size: 10%;
+    }
+    .header .hr hr{
+        margin-top: 100px;
+    }
 }
-
 @media all and (max-width: 1024px) {
     .content {
-         height: 80%; 
-     }
-     .title h1 strong{
+        height: 80%; 
+    }
+    .title h1 strong{
         font-size: 80%;
     }
 }
@@ -123,7 +120,7 @@ ul li a:hover{
     .title h1 strong{
         text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
         color:#cc8800 ;   
-        font-size: 70%;
+    font-size: 70%;
 
     }
 }
@@ -132,25 +129,23 @@ ul li a:hover{
         text-shadow: 0 0 5px gold, 0 0 7px #cc8800;
         color:#cc8800 ;
         font-size: 12px;
-        
     }
     .content {
         height: 90%; 
     }
     .title h1 strong{
         font-size: 71%;
-   }
-   .main h2 strong{
-    font-size: 99%;
-}
-.img-logo{
-    float: left; 
-
-}
-.title {
-    font-size: 10px;
-    text-align: center;
-    font-family: "Lobster", serif;
-    padding-bottom: 6px;
-}
+    }
+    .main h2 strong{
+        font-size: 99%;
+    }
+    .img-logo{
+        float: left; 
+    }
+    .title {
+        font-size: 10px;
+        text-align: center;
+        font-family: "Lobster", serif;
+        padding-bottom: 6px;
+    }
 }

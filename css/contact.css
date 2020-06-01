@@ -1,0 +1,95 @@
+
+    .content {
+        height: 76%;
+    }
+
+  
+    .columm-left {
+        float: left;
+        height: 548px;
+        margin-left: -36px;
+        width: 65%;
+        margin-top: 34px;
+        border-radius: 5px;
+        background-color: #288496bd;
+        padding: 11px;
+    }
+    .columm-right {
+        float: right;
+        width: 28%;
+        margin-top: 15px;
+    }
+
+    input {
+        width: 96%;
+        height: 27px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: rgba(247, 240, 245, 0.91);
+    }
+
+    textarea {
+        width: 96%;
+        height: 124px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: rgba(247, 240, 245, 0.91);
+    }
+
+    select {
+        border: none;
+        border-radius: 4px;
+        width: 96%;
+        height: 27px;
+        background-color: rgba(247, 240, 245, 0.91);
+    }
+
+
+    #contact {
+        width: 121%;
+        height: 271px;
+        margin-left: -40px;
+        margin-top: 19px;
+        border-radius: 5px;
+        background-color: #288496bd;
+        padding: 11px;
+    }
+    #note {
+        width: 119%;
+        height: 247px;
+        margin-left: -39px;
+        margin-top: 9px;
+        border-radius: 5px;
+        background-color: #288496bd;
+        padding: 11px;
+    }
+
+    .menu ul {
+        background: #1F568B;
+        list-style-type: none;
+        text-align: center;
+        overflow: hidden;
+        margin-left: -1px;
+        margin-top: 16px;
+    }
+
+    .menu ul li a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .menu ul .icon {
+        float: left;
+    }
+
+    .menu ul li a .active {
+        background-color: #4CAF50;
+        color: white;
+    }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../js/contact.js">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</header>
+
+<body id="grad1">
+    <div class="content">
+        <header id="header-contact">
+            <div class="title">
+                <div class="menu">
+                    <ul>
+                        <li><a href="../html/index.html" class="active">Home</a></li>
+                        <li><a class="item-menu" href="../html/aboutUs.html">About Us</a></li>
+                        <li><a class="item-menu" href="contact.html">Contact</a></li>
+                        <li>
+                            <a>
+                                <input width="210%" type="text" placeholder="Search.." name="search">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="columm-left">
+                <h1><strong>CONTACT</h1></strong>
+                <hr
+                    style=" background-color: orange;width:100%;text-align:left;margin-left:0;border-color: orange ;margin-top: -13px">
+                If you need anything from us, please dont't hesitate to contact with us via bellow form. We will
+                contact you
+                as soon as possible
+                <form class="form" method="POST">
+                    <p><label for="name"><strong>Name</strong></label><br>
+                        <input type="text" id="name" name="name" placeholder=" please Your name.."><br></p>
+
+                    <p><label for="Email"><strong>Email</strong></label><br>
+                        <input type="text" id="email" name="email" placeholder="Please put your email.."><br></p>
+
+                    <p><label for="subject"><strong>Subject</strong></label><br>
+                        <select name="Subject" id="option">
+                            <option value="-1" selected>[choose yours subject]</option>
+                            <option value=" React-JS">React-JS</option>
+                            <option value="Java">Java</option>
+                            <option value="PHP">PHP</option>
+                        </select>
+
+                    <p><label for="subject"><strong>Your message</strong></label><br>
+                        <textarea id="message" name="message" placeholder="Please let us know your idea" minlength="1"
+                            maxlength="500"></textarea><br>
+                    </p>
+
+                </form>
+                <p><input type="button" value="send" onclick="showInformation()"></p>
+            </div>
+            <div class="columm-right">
+                <strong>
+                    <form id="contact">
+                        <h2>HT ACTIVE</h2>
+                        <hr
+                            style=" background-color: orange;width:100%;text-align:left;margin-left:0;border-color: orange">
+                        150 Da Nang, Viet Nam<br>
+                        <i class="fa fa-phone"></i>
+                        0905 610 229<br>
+                        hoangvhh<br>
+                        recrult@htactive.com
+                    </form>
+                    <form id="note">
+                        <strong>Hiện thị thông tin</strong>
+                        <hr
+                            style=" background-color: orange;width:100%;text-align:left;margin-left:0;border-color: orange">
+                        <p id="p1"> <strong>name: </strong> </p>
+                        <p id="p2"> <strong>email: </strong> </p>
+                        <p id="p3"><strong> subject:</strong> </p>
+                        <p id="p4"><strong>message: </strong> </p>
+                        <p id="notvalid"></p>
+                        <p><input type="button" value="trở lại" onclick="deleteData()"></p>
+                    </form>
+                </strong>
+            </div>
+            <!-- </div> -->
+        </main>
+    </div>
+</body>

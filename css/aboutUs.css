@@ -1,0 +1,72 @@
+
+    .content-about-us {
+        background-color: rgb(247, 240, 245);
+        padding: 20px;
+        position: fixed;
+        /* text-align: center; */
+        width: 47%;
+        margin: 0 25% 0% 25%;
+        top: 10%;
+        border: 5px solid black;
+        height: 80%;
+        border-radius: 8px;
+        border-top: 5px black;
+        border-left: 5px black;
+        border-color: black;
+    }
+    .columm-left {
+    float: left;
+    height: 518px;
+    margin-left: 0;
+    width: 65%;
+    text-align: center;
+    margin-top: 52px;
+    border-radius: 5px;
+    /* background-color: #288496bd; */
+    padding: 11px;
+    }
+
+    .columm-right {
+        float: right;
+        width: 28%;
+        margin-top: 15px;
+    }
+
+
+
+    #contact {
+        width: 105%;
+        height: 328px;
+        margin-left: -35px;
+        margin-top: 39px;
+        border-radius: 5px;
+        background-color: #288496bd;
+        padding: 11px;
+    }
+
+    #note {
+        margin-top: -4px;
+        width: 105%;
+        height: 154px;
+        margin-left: -35px;
+        margin-top: 11px;
+        border-radius: 5px;
+        background-color: #288496bd;
+        padding: 11px;
+    }
+    img{
+        border-radius: 50%;
+    }
+    button{
+        margin-top: 28px;
+        background-color: #288496bd;
+        width: 152px;
+        height: 50px;
+        border: 1px solid orange;
+        border-radius: 12px;
+    }
+
+    button :hover{
+        background-color: hotpink;
+        color: #288496bd ;
+    }
