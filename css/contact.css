@@ -1,18 +1,28 @@
 
     .content {
-        height: 76%;
+        width: 60%;
+        margin: 0;
+        top: 0;
+        position: unset;
+        background-color: rgb(238, 206, 227);
     }
 
-  
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    }
     .columm-left {
         float: left;
         height: 548px;
-        margin-left: -36px;
+        margin-left: -18px;
         width: 65%;
         margin-top: 34px;
         border-radius: 5px;
         background-color: #288496bd;
-        padding: 11px;
+        padding: 10px;
     }
     .columm-right {
         float: right;
@@ -48,7 +58,7 @@
 
 
     #contact {
-        width: 121%;
+        width: 100%;
         height: 271px;
         margin-left: -40px;
         margin-top: 19px;
@@ -57,7 +67,7 @@
         padding: 11px;
     }
     #note {
-        width: 119%;
+        width:100%;
         height: 247px;
         margin-left: -39px;
         margin-top: 9px;
@@ -93,3 +103,74 @@
         background-color: #4CAF50;
         color: white;
     }
+    @media all and (max-width: 1163px) {
+        .columm-left {
+            float: left;
+            height: 548px;
+            margin-left: -25px;
+            width: 62%;
+            margin-top: -4px;
+        }
+        #contact {
+            height: 249px;
+            margin-left: -40px;
+            margin-top: -18px;
+        }
+        #note {
+            height: 268px;
+            margin-left: -39px;
+            margin-top: 7px;
+        }
+    }
+    @media (max-width: 786px){
+        .columm-left {
+            margin-left: 3px;
+            width: 53%;
+        } 
+        #contact {
+            height: 249px;
+            margin-left: -57px;
+            width: 161px;
+        }
+        #note {
+            height: 268px;
+            margin-left: -57px;
+            width: 161px;
+        }
+    }
+    @media (max-width: 425px){
+        #grad1{
+            height: auto;
+        }
+        .content {
+            width: 90%;
+        }
+        main {
+            width: 100%;
+        }
+        .columm-left{
+            width: 93%;
+            float: none;
+            padding-bottom: 0px;
+        }
+        
+        .columm-right{
+            margin: 0;
+            width: 100%;
+            float: none;
+        }
+        #note {
+            margin: 1px;
+            padding: 13px;
+            width: 93%;
+            margin-top: 20px;
+        }
+        #contact {
+            margin: 1px;
+            width: 94%;
+            height: auto;
+            margin-top: 20px;
+        }
+    }
+  
+

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../js/index.js">
     <link rel="stylesheet" type="text/css" href="../css/slider.css">
     <link rel="stylesheet" type="text/css" href="../css/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
@@ -12,22 +12,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</header>
+</head>
 
 <body id="grad1">
     <div class="content">
         <header>
             <div class="img-logo">
-                <img src="../img/logo.PNG" alt="logo" width="100px" height="100px">
+                <img id="logo" src="../img/logo.PNG" alt="logo">
             </div>
             <div class="title">
                 <h1> <strong> San Joaquin Valley Town Hall</strong></h1>
                 <strong><em> Bringing cutting -edge speakers to the valley</em></strong>
             </div>
             <div class="slideshow-container">
-                <div class="item-slide"><img id="slid" src="../img/img_lights_wide3.JPG " alt="slide1" height="100px"></div>
-                <div class="item-slide"><img id="slid" src="../img/img_nature_wide.JPG " alt="slide2" height="100px"></div>
-                <div class="item-slide"><img id="slid" src="../img/img_lights_wide3.JPG " alt="slide1" height="100px"></div>
+                <div class="item-slide"><img id="slid" src="../img/img_lights_wide3.JPG " alt="slide1" height="100px">
+                </div>
+                <div class="item-slide"><img id="slid" src="../img/img_nature_wide.JPG " alt="slide2" height="100px">
+                </div>
+                <div class="item-slide"><img id="slid" src="../img/img_lights_wide3.JPG " alt="slide1" height="100px">
+                </div>
             </div>
             <div style="text-align:center">
                 <span class="dot"></span>
@@ -38,11 +41,17 @@
         <menu>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a class="item-menu" href="../html/aboutUs.html">About Us</a></li>
                     <li><a class="item-menu" href="../html/contact.html">Contact</a></li>
-                    <li><a href="javascript:void(0);" style="font-size:15px;" class="icon"
-                            onclick="myFunction()">&#9776;</a></li>
+                    <li>
+                        <a class="item-menu">
+                            <input width="210%" type="text" placeholder="Search.." name="search">
+                        </a>
+                    </li>
+                    <li id="bar" style="float:right"><a class="active" href="javascript:void(0);"
+                            style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    </li>
                 </ul>
             </div>
         </menu>
@@ -71,6 +80,26 @@
             <p class="contact">copyright 2015 San Joaquin Valley Town Hall.</p>
         </footer>
     </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("item-slide");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 1000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../js/contact.js">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</header>
+</head>
 
 <body id="grad1">
     <div class="content">
@@ -40,10 +39,12 @@
                 as soon as possible
                 <form class="form" method="POST">
                     <p><label for="name"><strong>Name</strong></label><br>
-                        <input type="text" id="name" name="name" placeholder=" please Your name.."><br></p>
+                        <input type="text" id="name" name="name" placeholder=" please Your name.."> 
+                        <i class="fa fa-user" style="margin-right: -9px; margin-left: -26px;"></i> <br></p>
 
                     <p><label for="Email"><strong>Email</strong></label><br>
-                        <input type="text" id="email" name="email" placeholder="Please put your email.."><br></p>
+                        <input type="text" id="email" name="email" placeholder="Please put your email..">
+                        <i class="fa fa-envelope" style="margin-right: -9px; margin-left: -26px;"> </i><br></p>
 
                     <p><label for="subject"><strong>Subject</strong></label><br>
                         <select name="Subject" id="option">
@@ -55,7 +56,7 @@
 
                     <p><label for="subject"><strong>Your message</strong></label><br>
                         <textarea id="message" name="message" placeholder="Please let us know your idea" minlength="1"
-                            maxlength="500"></textarea><br>
+                            maxlength="500"></textarea> <i class="fa fa-pencil" style="margin-right: -9px; margin-left: -26px;"></i><br>
                     </p>
 
                 </form>
@@ -67,18 +68,17 @@
                         <h2>HT ACTIVE</h2>
                         <hr
                             style=" background-color: orange;width:100%;text-align:left;margin-left:0;border-color: orange">
-                        150 Da Nang, Viet Nam<br>
-                        <i class="fa fa-phone"></i>
-                        0905 610 229<br>
-                        hoangvhh<br>
-                        recrult@htactive.com
+                            <i class="fa fa-home"></i>   150 Da Nang, Viet Nam<br>
+                            <i class="fa fa-phone"></i>  0905 610 229<br>
+                            <i class="fa fa-skype"></i>  hoangvhh<br>
+                            <i class="fa fa-envelope">  </i>  recrult@htactive.com
                     </form>
                     <form id="note">
                         <strong>Hiện thị thông tin</strong>
                         <hr
                             style=" background-color: orange;width:100%;text-align:left;margin-left:0;border-color: orange">
-                        <p id="p1"> <strong>name: </strong> </p>
-                        <p id="p2"> <strong>email: </strong> </p>
+                        <p id="p1" velue= "your name"> <strong>name: </strong> </p>
+                        <p id="p2" valu> <strong>email: </strong> </p>
                         <p id="p3"><strong> subject:</strong> </p>
                         <p id="p4"><strong>message: </strong> </p>
                         <p id="notvalid"></p>
@@ -89,4 +89,39 @@
             <!-- </div> -->
         </main>
     </div>
+    <script>
+         function showInformation() {
+        const nam = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subj = document.getElementById("option").value;
+        const mess = document.getElementById("message").value;
+        var text = "";
+        if (nam === "" || email === "" || subj == "-1" || mess === "") {
+            text = "Input not valid";
+        } else {
+            console.log(nam, email, '????');
+
+            document.getElementById("p1").innerHTML = nam;
+            document.getElementById("p2").innerHTML = email;
+            document.getElementById("p3").innerHTML = subj;
+            document.getElementById("p4").innerHTML = mess;
+        }
+        document.getElementById("notvalid").innerHTML = text
+    }
+
+    function deleteData() {
+        var nam = "";
+        document.getElementById('name').value = nam;
+        var emal = "";
+        document.getElementById('email').value = emal;
+        var sub = "";
+        document.getElementById('option').value = sub;
+        var mess = "";
+        document.getElementById('message').value = mess;
+        document.getElementById("p1").innerHTML ="your name:";
+        document.getElementById("p2").innerHTML =" your email: ";
+        document.getElementById("p4").innerHTML ="your subject: ";
+        document.getElementById("p3").innerHTML = "your message: ";
+    } 
+    </script>
 </body>

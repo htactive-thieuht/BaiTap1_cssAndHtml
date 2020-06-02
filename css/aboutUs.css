@@ -1,39 +1,35 @@
 
     .content-about-us {
-        background-color: rgb(247, 240, 245);
-        padding: 20px;
-        position: fixed;
-        /* text-align: center; */
-        width: 47%;
-        margin: 0 25% 0% 25%;
-        top: 10%;
-        border: 5px solid black;
-        height: 80%;
-        border-radius: 8px;
-        border-top: 5px black;
-        border-left: 5px black;
-        border-color: black;
+        width: 60%;
+        margin: 0;
+        top: 0;
+        position: unset;
+        background-color: rgb(238, 206, 227);
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 0;
     }
     .columm-left {
-    float: left;
-    height: 518px;
-    margin-left: 0;
-    width: 65%;
-    text-align: center;
-    margin-top: 52px;
-    border-radius: 5px;
-    /* background-color: #288496bd; */
-    padding: 11px;
+        float: left;
+        height: 518px;
+        margin-left: 0;
+        width: 65%;
+        text-align: center;
+        margin-top: 52px;
+        border-radius: 5px;
+        padding: 11px;
     }
-
     .columm-right {
+        padding: 12px;
         float: right;
         width: 28%;
         margin-top: 15px;
+        text-align: center;
     }
-
-
-
     #contact {
         width: 105%;
         height: 328px;
@@ -43,7 +39,6 @@
         background-color: #288496bd;
         padding: 11px;
     }
-
     #note {
         margin-top: -4px;
         width: 105%;
@@ -65,8 +60,62 @@
         border: 1px solid orange;
         border-radius: 12px;
     }
-
     button :hover{
         background-color: hotpink;
         color: #288496bd ;
     }
+    @media all and (max-width: 768px) {
+        .button button{
+            width: -webkit-fill-available;
+        }
+        #grad1{
+            height: auto;
+        } 
+        .content-about-us {
+            width: 60%;
+            margin: 0;
+            top: 0;
+            position: unset;
+            text-align: center;
+            padding: 16px;
+            background-color: rgb(238, 206, 227);
+        }
+        .columm-left {
+            width: 100%;
+            text-align: center;
+            margin-top: 52px;
+            border-radius: 5px;
+            padding: 0px;
+        }
+        .columm-right {
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+        }
+    }
+    @media (max-width: 425px){
+        #grad1{
+            height: auto;
+        } 
+        .content-about-us {
+            width: 70%;
+            margin: 16px;
+            top: 0;
+            background-color: rgb(238, 206, 227);
+            padding: 12px;
+        }
+        .columm-left {
+            width: 100%;
+            text-align: center;
+            margin-top: 52px;
+            border-radius: 5px;
+            padding: 0px;
+        }
+        .columm-right {
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+        }
+    }  
+    
+    
